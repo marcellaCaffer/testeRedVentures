@@ -1,0 +1,296 @@
+/*Default*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	height: auto;
+	padding: 15px 0;
+	border-radius: 30px;
+	border: 0;
+	text-align: center;
+	color: @white;
+	font-size: 1.2em;
+	font-weight: bold;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+section {
+	width: 100%;
+	height: auto;
+}
+
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*Variables*/
+@white: #fff;
+@purple: #542d4c;
+@gray: #666;
+@light-gray: #cfcfcf;
+@black: #000;
+
+/*Section home*/
+section.home {
+	height: 765px;
+	background: url(images/bg.jpg) top center no-repeat;
+	
+	header {
+		overflow: hidden;
+	}
+
+	.logo {
+		margin-top: 35px;
+		float: left;
+	}
+
+	nav {
+		width: auto;
+		height: auto;
+		float: right;
+		margin-top: 50px;
+		
+		ul li {
+			margin: 0 15px;
+			float: left;
+			display: inline-block;			
+			font-weight: bold;
+			
+			a {
+				font-size: 1.3em;
+				color: @purple;
+			}
+			
+			a.cart img{
+				width: 23px;
+				margin-top: -5px;
+			}
+		}
+	}
+
+	article {
+		width: 520px;
+		float: right;
+		margin-top: 130px;
+
+		h1 {
+			color: @purple;
+			font-size: 4.6em;
+			text-transform: uppercase;
+		}
+
+		p {
+			color: @purple;
+			font-size: 1.4em;
+			margin: 10px 0 15px 0;
+		}
+
+		button {
+			width: 200px;
+			background-color: @purple;
+		}
+	}
+
+	@media screen and (min-width: 500px) and (max-width: 1100px) {
+		article {
+			width: 45%;
+
+			h1 {
+				font-size: 2.9em;
+			}
+			p {
+				font-size: 1.3em;
+			}
+		}
+	}
+}
+
+/*Section Products*/
+section.products {
+	height: auto;
+	background-color: #f7f7f7;
+	padding: 30px 0;
+
+	header {
+		width: 100%;
+		overflow: hidden;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #cdcdcd;
+
+		.options {
+			float: left;
+			margin: 10px 40px 0 0;
+			color: @black;
+			font-size: 1.2em;
+
+			label {
+				margin-left: 15px;
+				color: #666;
+				font-size: 1em;
+				cursor: pointer;
+			}
+
+		}
+
+		button {
+			width: 200px;
+			background-color: #70d6b8;
+			float: right;
+
+			@media screen and (max-width: 700px) {
+					float: left;
+					display: block;
+					margin-top: 10px;
+			}
+		}
+	}
+
+	.all-products {
+		margin-top: 100px;
+
+		h2 {
+			text-align: center;
+			font-size: 2em;
+			color: @gray;
+			font-weight: lighter;
+			margin-bottom: 40px;
+		}
+
+		.item-product {
+			width: 100%;
+			height: 430px;
+			clear: both;
+
+			@media screen and (min-width: 1001px) {
+				height: 430px;
+			}
+
+			@media screen and (min-width: 501px) and (max-width: 1000px) {
+				height: 850px;
+			}
+
+			@media screen and (max-width: 500px) {
+				height: 1700px;
+			}
+
+			.item {
+				width: 290px;
+				height: 410px;
+				margin: 0 1% 20px 0;
+				padding: 15px;
+				box-sizing: border-box;
+				background-color: @white;
+				float: left;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				.category {
+					font-size: 1em;
+					color: @light-gray;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+
+				.img {
+					height: 200px;
+					margin: 40px 0 20px 0;
+				}
+
+				h3 {
+					font-size: 1.6em;
+					color: @gray;
+					text-align: center;
+				}
+
+				.price {
+					font-size: 1.6em;
+					color: @black;
+					text-align: center;
+				}
+
+				button {
+					width: 180px;					
+					background-color: #70d6b8;					
+					margin: 0 auto;
+					margin-top: 15px;
+					display: none;		
+				}
+
+				&:hover{
+					-webkit-box-shadow: -1px 0px 34px 0px rgba(0,0,0,0.75);
+					-moz-box-shadow: -1px 0px 34px 0px rgba(0,0,0,0.75);
+					box-shadow: -1px 0px 34px 0px rgba(0,0,0,0.75);
+					cursor: pointer;
+
+					button {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+/*Section About*/
+section.about {
+	height: 550px;
+	background: url(images/bg-about.jpg) top center no-repeat;
+
+	h2{
+		width: 155px;
+		margin: 0 auto;
+		padding: 95px 0 10px 0;
+		font-size: 2.5em;
+		color: @white;
+		font-weight: lighter;
+		border-bottom: 5px solid #e03a6a;
+	}
+
+	p{
+		color: @white;
+		font-size: 1.4em;
+		font-weight: lighter;
+		text-align: center;
+		margin: 0 auto;
+		width: 73%;
+		line-height: 25px;
+		margin-top: 40px;
+	}
+}
+
+/*Footer*/
+footer {
+	width: 100%;
+	height: auto;
+	background-color: #e2e2e2;
+	padding: 50px 0;
+
+	p {
+		color: @gray;
+		font-size: 1.3em;
+		text-align: center;
+	}
+
+	img {
+		margin-right: 15px;
+	}
+}

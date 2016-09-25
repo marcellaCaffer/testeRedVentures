@@ -1,0 +1,250 @@
+/*Default*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+button {
+  height: auto;
+  padding: 15px 0;
+  border-radius: 30px;
+  border: 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.5;
+}
+section {
+  width: 100%;
+  height: auto;
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+/*Variables*/
+/*Section home*/
+section.home {
+  height: 765px;
+  background: url(images/bg.jpg) top center no-repeat;
+}
+section.home header {
+  overflow: hidden;
+}
+section.home .logo {
+  margin-top: 35px;
+  float: left;
+}
+section.home nav {
+  width: auto;
+  height: auto;
+  float: right;
+  margin-top: 50px;
+}
+section.home nav ul li {
+  margin: 0 15px;
+  float: left;
+  display: inline-block;
+  font-weight: bold;
+}
+section.home nav ul li a {
+  font-size: 1.3em;
+  color: #542d4c;
+}
+section.home nav ul li a.cart img {
+  width: 23px;
+  margin-top: -5px;
+}
+section.home article {
+  width: 520px;
+  float: right;
+  margin-top: 130px;
+}
+section.home article h1 {
+  color: #542d4c;
+  font-size: 4.6em;
+  text-transform: uppercase;
+}
+section.home article p {
+  color: #542d4c;
+  font-size: 1.4em;
+  margin: 10px 0 15px 0;
+}
+section.home article button {
+  width: 200px;
+  background-color: #542d4c;
+}
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  section.home article {
+    width: 45%;
+  }
+  section.home article h1 {
+    font-size: 2.9em;
+  }
+  section.home article p {
+    font-size: 1.3em;
+  }
+}
+/*Section Products*/
+section.products {
+  height: auto;
+  background-color: #f7f7f7;
+  padding: 30px 0;
+}
+section.products header {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #cdcdcd;
+}
+section.products header .options {
+  float: left;
+  margin: 10px 40px 0 0;
+  color: #000000;
+  font-size: 1.2em;
+}
+section.products header .options label {
+  margin-left: 15px;
+  color: #666;
+  font-size: 1em;
+  cursor: pointer;
+}
+section.products header button {
+  width: 200px;
+  background-color: #70d6b8;
+  float: right;
+}
+@media screen and (max-width: 700px) {
+  section.products header button {
+    float: left;
+    display: block;
+    margin-top: 10px;
+  }
+}
+section.products .all-products {
+  margin-top: 100px;
+}
+section.products .all-products h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #666666;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+section.products .all-products .item-product {
+  width: 100%;
+  height: 430px;
+  clear: both;
+}
+@media screen and (min-width: 1001px) {
+  section.products .all-products .item-product {
+    height: 430px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  section.products .all-products .item-product {
+    height: 850px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.products .all-products .item-product {
+    height: 1700px;
+  }
+}
+section.products .all-products .item-product .item {
+  width: 290px;
+  height: 410px;
+  margin: 0 1% 20px 0;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  float: left;
+}
+section.products .all-products .item-product .item:last-child {
+  margin-right: 0;
+}
+section.products .all-products .item-product .item .category {
+  font-size: 1em;
+  color: #cfcfcf;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+section.products .all-products .item-product .item .img {
+  height: 200px;
+  margin: 40px 0 20px 0;
+}
+section.products .all-products .item-product .item h3 {
+  font-size: 1.6em;
+  color: #666666;
+  text-align: center;
+}
+section.products .all-products .item-product .item .price {
+  font-size: 1.6em;
+  color: #000000;
+  text-align: center;
+}
+section.products .all-products .item-product .item button {
+  width: 180px;
+  background-color: #70d6b8;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: none;
+}
+section.products .all-products .item-product .item:hover {
+  -webkit-box-shadow: -1px 0px 34px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 34px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 34px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+section.products .all-products .item-product .item:hover button {
+  display: block;
+}
+/*Section About*/
+section.about {
+  height: 550px;
+  background: url(images/bg-about.jpg) top center no-repeat;
+}
+section.about h2 {
+  width: 155px;
+  margin: 0 auto;
+  padding: 95px 0 10px 0;
+  font-size: 2.5em;
+  color: #ffffff;
+  font-weight: lighter;
+  border-bottom: 5px solid #e03a6a;
+}
+section.about p {
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 auto;
+  width: 73%;
+  line-height: 25px;
+  margin-top: 40px;
+}
+/*Footer*/
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #e2e2e2;
+  padding: 50px 0;
+}
+footer p {
+  color: #666666;
+  font-size: 1.3em;
+  text-align: center;
+}
+footer img {
+  margin-right: 15px;
+}
